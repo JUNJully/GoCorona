@@ -64,8 +64,6 @@ body {
     min-height: 114px;
     align-items: center;
 }
-.header__logo {
-}
 .header__menu {
     flex:1 1 auto;
 }
@@ -343,9 +341,7 @@ color:#000000;
 }
 /*--------------------------------------------------------------------------*/
 .health {
-    padding:80px 0 0 0;
-}
-.health__container {
+    padding:80px 0 30px 0;
 }
 .health__text-block {
     max-width: 720px;
@@ -357,4 +353,98 @@ color:#000000;
 .ww {
   max-width: 600px;
   margin: 0 auto;
+}
+.health__items {
+    padding:50px 0 30px 0;
+    display: flex;
+    max-width: 920px;
+    gap:72px;
+    margin:0 auto;
+    flex:0 1 33.333%;
+}
+.item-health__item {
+   position:relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 35px 20px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+   border-radius: 8px;
+   text-align: center;
+}
+.item-health__icon {
+    margin:0 0 58px 0;
+}
+.item-health__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138.5%;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #000000;
+    margin:0 0 5px 0;
+}
+.item-health__text {
+    letter-spacing: 0.08em;
+}
+.item-health {
+    position: relative;
+    z-index: 2;
+}
+.item-health1::before {
+    position: absolute;
+    background-color: #EC5863;
+    border-radius: 16px;
+    content:"";
+    width:65px;
+    height:65px;
+    transform: rotate(-25deg);
+    position:absolute;
+    bottom: -20px;
+    left:-20px;
+}
+.item-health1::after {
+    position: absolute;
+    background-color: #EC5863;
+    border-radius: 30px;
+    content:"";
+    width:97px;
+    height:97px;
+    transform: rotate(-25deg);
+    position:absolute;
+    bottom: 150px;
+    left:300px;
+}
+.item-health2::before {
+    position: absolute;
+    background-color: #EC5863;
+    border-radius: 30px;
+    content:"";
+    width:128px;
+    height:128px;
+    transform: rotate(30deg);
+    position:absolute;
+    bottom:-10px;
+    left:200px;
+}
+.item-health3::before {
+    position: absolute;
+    background-color: #EC5863;
+    border-radius: 16px;
+    content:"";
+    width:65px;
+    height:65px;
+    transform: rotate(40deg);
+    position:absolute;
+    top: -30px;
+    right:-15px;
+}
+/*----------------------------------------------------------------------------------*/
+.footer__items {
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
 }
